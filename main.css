@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*tamanho do logo*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/*menu a direita*/
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+
+/*remove as bolinhas do menu*/
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+/*Alinha o menu, um topico ao lado do outro*/
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*formato do texto e cor do menu*/
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+
+/*botão hamburguer do menu*/
+.menu-icon{
+    margin-left: 25px;
+    display: none;
+}
+
+.sacola{
+    cursor: pointer;
+
+}
+
+   
+
+/*cor do texto dos paragrafos*/
+p{
+    color: #555
+}
+
+/*formatação geral do menu superior*/
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*formatação da imagem de slogan  foto de capa e o texto ao lado*/
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn{
+    display: inline-block;
+    background: #3bb8c4;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: #63ebf0;
+}
+
+
+/*cor de fundo principal*/
+
+.header{
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+/*imagens n2 abaixo*/
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container{
+     max-width: 1280px;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+}
+
+
+/* Formatação dos produtos*/
+
+.col-4{
+    flex-basis: 23%;
+    padding: 10px;
+    max-width: 400px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+
+/*avaliação por estrelas*/
+
+/* Estilos CSS para o sistema de estrelas */
+         .rating {
+            display: inline-block;
+            font-size: 0;
+            /* Remove o float para que as estrelas fiquem alinhadas à esquerda */
+        }
+
+        /* Oculta os botões de rádio padrão */
+        .rating input[type="radio"] {
+            display: none;
+        }
+
+        /* Estiliza as estrelas (labels) */
+        .rating label {
+            font-size: 1.5rem; /* Tamanho da estrela */
+            color: #ccc; /* Cor padrão cinza */
+            cursor: pointer;
+            padding: 0 5px; /* Espaço entre as estrelas */
+            float: right; /* Alinha as estrelas à direita, mas no HTML elas estão invertidas, criando o efeito de esquerda para direita */
+        }
+
+        /* Muda a cor das estrelas ao passar o mouse */
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #ffd700; /* Dourado */
+        }
+
+        /* Muda a cor das estrelas quando uma é selecionada */
+        .rating input:checked ~ label {
+            color: #ffd700;
+        }
+
+        /* Container ajustado */
+        .rating-container {
+            /* Removemos direction: rtl; */
+        }
+
+        /* Reset do hover para evitar conflitos */
+        .rating-container:hover .rating label {
+            color: #ccc;
+        }
+
+        .rating-container:hover .rating label:hover,
+        .rating-container:hover .rating label:hover ~ label {
+            color: #ffd700;
+        }
+
+
+        /*Formatação do título Produtos*/
+
+        .title{
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+            
+        }
+
+        h4{
+            color: #333131;
+            font-weight: normal;
+        }
+
+        .col-4 p{
+            font-size: 14px;
+        }
+
+        .col-4:hover{
+            transform: translateY(-5px);
+        }
+
+        /*offer*/
+.offer{
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.breif-desc{
+    text-align: left;
+    margin: 0 auto 10px;
+    position: relative;
+    line-height: 20px;
+    color: #363636;
+            
+}
+
+.col-2 .offer-img{
+    padding: 90px;
+}
+ 
+
+/*------------avaliações ----------*/
+
+.testimonial{
+    padding-top: 100px;
+}
+
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transform: 0.5s;
+}
+.testimonial .col-3 img{
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+
+}
+
+.stars{
+    color: #ffd700;
+}
+
+/*------------------footer-------------------*/
+
+
+.footer{
+    background: #ffd6d6;
+    color: #5f5f5f;
+    font-size: 14px;
+    padding: 60px 0 20px;
+     
+}
+
+.footer p{
+    color: #000000;
+}
+
+.footer h3{
+    margin-bottom: 20px;
+    color: #000000;
+    
+}
+
+
+.footer-col-1, .footer-col-2, .footer-col-3{
+    min-width: 205px;
+    margin-bottom: 20px;
+
+} 
+
+.footer-col-2 img{
+    display: flex;
+    
+    padding: 20px;
+    width: 90px;
+    padding: 0;
+    display: flex; /* Alinha os ícones na horizontal */
+    
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.footer-col-4 ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0;
+    display: flex; /* Alinha os ícones na horizontal */
+    flex-wrap: wrap; /* Permite que os ícones quebrem a linha se não couberem */
+    gap: 15px; /* Adiciona um espaço entre os ícones */
+}
+
+.footer-col-4 ul li a img {
+    width: 32px; /* Define um tamanho padrão para os ícones */
+    height: 32px;
+    transition: transform 0.2s ease-in-out; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito de zoom ao passar o mouse sobre o ícone */
+.footer-col-4 ul li a:hover img {
+    transform: scale(1.1);
+}
+
+.icone{
+    width: 80px;
+    padding: 10px;
+    align-items: left;
+}
+
+/* ---- Media Queries para Responsividade ---- */
+@media only screen and (max-width: 800px) {
+
+    /* Ajusta a direção das linhas para que os itens se empilhem verticalmente */
+    .row {
+        flex-direction: column;
+    }
+
+    /* Reduz o padding do menu de navegação para economizar espaço */
+    .navbar {
+        padding: 10px;
+    }
+    
+    /* Centraliza o menu de navegação e ajusta a direção para vertical */
+    nav {
+        text-align: center;
+        width: 100%; /* Ocupa a largura total */
+    }
+
+    /* Remove a exibição em linha para que os itens do menu fiquem um abaixo do outro */
+   nav ul {
+        position: absolute;
+        top: 95px;
+        left: 0;
+        background: #333131;
+        width: 100%;
+    }
+
+    /* Ocupa a largura total para que cada item do menu fique em sua própria linha */
+    nav ul li {
+       display: block;
+       margin-right: 50px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       text-align: right;
+    }
+
+   
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+
+    }
+
+      nav ul li a{
+        color: #fff;
+     }
+
+    /* Ajusta a largura das colunas para ocuparem 100% da tela */
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+        min-width: unset; /* Remove o min-width para permitir que a coluna encolha */
+        margin-bottom: 20px;
+        text-align: center; /* Centraliza o conteúdo das colunas */
+    }
+
+    /* Centraliza e ajusta o tamanho do texto principal */
+    .col-2 h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 15px 0;
+    }
+
+    /* Centraliza e ajusta a imagem principal */
+    .col-2 img {
+        width: 100%;
+        height: auto; /* Deixa a altura se ajustar automaticamente */
+        padding: 20px 0; /* Reduz o padding */
+    }
+
+    /* Garante que o container ocupe a largura total */
+    .container, .small-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Ajusta o padding do cabeçalho */
+    .header .row {
+        margin-top: 30px;
+    }
+
+    /* Centraliza e ajusta o título */
+    .title {
+        margin: 0 auto 40px; /* Reduz a margem inferior */
+        line-height: 40px;
+    }
+
+    /* Alinha o texto do card de oferta para telas menores */
+    .offer .breif-desc {
+        text-align: center;
+    }
+    
+    /* Centraliza o botão e ajusta o espaçamento */
+    .btn {
+        margin: 20px auto;
+    }
+
+    /* Ajusta o rodapé para que as colunas se empilhem */
+    .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .footer-col-2 img, .footer-col-4 ul {
+        justify-content: center; /* Centraliza os ícones no rodapé */
+        display: flex;
+    }
+
+    .footer-col-2 img {
+       
+        margin-left: 100px;
+    }
+    
+    .footer-col-4 ul {
+        flex-wrap: nowrap; /* Evita que os ícones quebrem a linha */
+        gap: 10px; /* Adiciona um pequeno espaço entre os ícones */
+    }
+    
+    .footer-col-4 ul li a img {
+        width: 28px; /* Reduz o tamanho dos ícones */
+        height: 28px;
+    }
+
+    .icone {
+        width: 60px; /* Reduz o tamanho do ícone */
+        padding: 5px;
+    }
+
+    /* Adicione estas regras para o menu de hambúrguer */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+    }
+
+    /* Esconde o menu de navegação por padrão em telas menores */
+    #menuItems {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    /* Exibe o menu quando a classe 'show' é adicionada */
+    #menuItems.show {
+        max-height: 200px; /* Altura suficiente para mostrar o menu */
+    }
+}
+
+/* ------------------------------------------- */
+
+/* Media Queries para Telas de Tablets (entre 801px e 1080px) */
+@media only screen and (min-width: 801px) and (max-width: 1080px) {
+
+    /* Altera o tamanho das colunas para que fiquem lado a lado, mas com um pouco mais de espaço */
+    .col-2 {
+        flex-basis: 45%;
+        min-width: unset; /* Remove o min-width para melhor adaptação */
+    }
+
+    /* Ajusta o tamanho da fonte do título principal para que não ocupe muito espaço */
+    .col-2 h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    
+    /* Garante que a imagem não se estique */
+    .col-2 img {
+        max-width: 100%;
+        height: auto; /* A altura se ajusta para manter a proporção original */
+        object-fit: contain; /* Garante que a imagem caiba sem ser cortada ou esticada */
+    }
+
+    /* Altera as colunas de produtos para que três itens caibam em uma linha */
+    .col-4 {
+        flex-basis: 30%; /* Reduz a largura para 30% para caber 3 itens com espaçamento */
+        max-width: 300px; /* Limita a largura máxima para evitar que a imagem se estique demais */
+        margin-bottom: 40px;
+    }
+
+    /* Oculta o ícone do menu de hambúrguer */
+    .menu-icon {
+        display: none;
+    }
+
+    /* Oculta a lista de navegação em telas maiores */
+    #menuItems {
+        max-height: unset !important;
+        overflow: visible;
+        display: inline-block;
+    }
+}
